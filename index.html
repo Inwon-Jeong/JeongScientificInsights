@@ -449,19 +449,48 @@
     </div>
   </article>
 
-    <!-- (수정) 두 번째 게시물(Conference) -->
-    <article class="conference-post">
-      <div class="post-header">
-        <h3 class="post-title">두 번째 학회 발표</h3>
-      </div>
-      <div class="post-content">
-        <img src="C:/Users/Inwon/Desktop/homepage/conference/con2.png" 
-             alt="학회 이미지2" style="width: 100%; max-width: 400px;">
-        <p>두 번째 발표 내용. 댓글 섹션은 없습니다.<br>
-           이미지 아래에 필요한 설명을 적으시면 됩니다.
-        </p>
-      </div>
-    </article>
+  <!-- 첫 번째 게시물(Conference) -->
+  <article class="conference-post">
+    <!-- post-header에는 제목만 -->
+    <div class="post-header">
+      <h3 class="post-title">Korean Society of Applied Entomology, 2023, Spring</h3>
+    </div>
+    
+    <!-- post-content 안에 이미지 + 동영상 + 설명 -->
+    <div class="post-content">
+      <!-- 이미지 1 -->
+      <img src="conference1.png"
+           alt="conference1.png"
+           style="width: 100%; height: auto;">
+      <p class="image-caption" style="margin-bottom: 1rem;">
+        구두발표 초록입니다. 객체 탐지 알고리즘인 YOLO를 활용해 감꼭지나방과의 대표적인 해충인 열매꼭지나방을 <br>
+        자동적으로 탐지하고 동정하고자 했습니다. <br><br>
+        This is an abstract for an oral presentation.<br>
+        We aimed to automatically detect and identify the <em>Stathmopoda auriferella</em>,<br> 
+        a representative pest of Stathmopodidae, using the object detection algorithm YOLO.
+      </p>
+
+      <!-- 이미지 2 -->
+      <img src="conference1_1.png"
+           alt="학회 이미지2"
+           style="width: 100%; height: auto;">
+      <p class="image-caption" style="margin-bottom: 1rem;">
+        Colab을 활용한 탐지 결과, 성공적으로 자동 탐지 및 동정을 수행했습니다.<br>
+        코드도 사진으로 같이 첨부하니 필요하신 분들은 사용하시면 되겠습니다.<br><br>
+        Using Colab, we successfully performed automatic detection and identification.<br>
+        The code is attached as an image, so please feel free to use it as needed.
+      </p>
+
+      <!-- 동영상 -->
+      <video controls style="width: 100%; height: auto;">
+        <source src="C:/Users/Inwon/Desktop/homepage/conference/conference_video.mp4" type="video/mp4">
+        브라우저가 동영상을 지원하지 않습니다.
+      </video>
+      <p class="video-caption" style="margin-bottom: 1rem;">
+        위 동영상에 대한 설명을 이곳에 작성하세요.
+      </p>
+    </div>
+  </article>
 
   </section>
 
