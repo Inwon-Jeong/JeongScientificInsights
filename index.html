@@ -676,7 +676,154 @@
   <h2>Review</h2>
 
 
+  <!-- 예시 게시물(1) -->
+  <article class="review-post">
+    <div class="post-header">
 
+      
+      <img src="MicroCT1.png" alt="게시물 이미지" 
+           style="width: 100px; height: outo;" />
+      <h3 class="post-title">About Micro-CT (Computed Tomography) [Intro]</h3>
+    </div>
+    <div class="post-content">
+      <p>
+        Micro-CT의 대략적인 원리는 다음과 같습니다.<br>
+        시료에 X선을 투과시켜 여러 각도에서 투과된 단면 이미지를 획득한 후, <br>
+        이를 컴퓨터 상에서 합성하여 시료의 내부 구조를 3차원으로 재구성하는 기술로,<br>
+        미세한 구조를 비파괴적으로 분석할 수 있다는 점에서 생물학, 재료공학, 고고학 등 다양한 분야에서 활용되고 있습니다.<br>
+        다양한 각도에서 데이터를 수집하고, 각 영상 간 격차를 최소화하여 3D 볼륨 데이터를 얻기 때문에,<br>
+        기존의 2차원 이미지로는 관찰하기 어려운 복잡한 내부 구조나 결합, 입체 구조를 정밀하게 확인할 수 있다는 장점이 있습니다.<br><br>
+        The general principle of Micro-CT is as follows:<br> 
+        This technology acquires cross-sectional images by passing X-rays through a sample from multiple angles,<br> 
+        then reconstructs these images on a computer to visualize the internal structure of the sample in three dimensions.<br> 
+        Due to its ability to non-destructively analyze fine structures, Micro-CT is widely applied in various fields <br>
+        such as biology, materials engineering, and archaeology.<br> 
+        By collecting data from multiple angles and minimizing gaps between each captured image, detailed 3D volume data is produced,<br>
+        allowing precise observation of complex internal structures, connections, and three-dimensional configurations that are difficult to discern using conventional 2D imaging methods.
+      </p>
+
+      
+      <!-- (추가) 왼쪽에 동영상+이미지(가로 100% & 세로 auto), 오른쪽에 텍스트 -->
+      <div class="detail-layout" style="display: flex; gap: 1rem;">
+        <!-- 왼쪽 구역 (동영상 + 여러 이미지) -->
+        <div class="left-media-area" style="flex: 1; display: flex; flex-direction: column; gap: 1rem;">
+
+
+          <!-- (2) 첫 번째 이미지 + 설명 -->
+          <figure style="margin: 0; padding: 0;">
+            <img src="MicroCT2.png" alt="추가 이미지1"
+                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
+            <figcaption style="margin-top: 0.3rem;">
+              경우에 따라 위에 보이는 이미지처럼 더 세부적으로 나눠서 불리기도 하는데,<br> 
+              설명에서는 일반적으로 많이 쓰이는 Micro-CT로 부르겠습니다.<br> <br> 
+              Depending on the case, it may be divided into more specific categories as shown in the image above,<br> 
+              but for the purpose of this explanation, we will generally use the widely accepted term "Micro-CT".
+            </figcaption>
+          </figure>
+
+          
+          <!-- (2) 첫 번째 이미지 + 설명 -->
+          <figure style="margin: 0; padding: 0;">
+            <img src="MicroCT3.png" alt="추가 이미지1"
+                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
+            <figure style="margin: 0; padding: 0;">
+            <video controls autoplay loop muted style="width: 100%; height: auto;"">
+              <source src="MicroCT4.mp4" type="video/mp4">
+              <!-- 대체 안내 문구 -->
+              Your browser does not support this video format.
+            </video>
+            <figcaption style="margin-top: 0.3rem;">
+             [Ref. https://youtu.be/QBc4oF7QU2o?si=YVUXxY0_OM6wqfJn]<br> 
+            </figcaption>
+          </figure>
+            <figcaption style="margin-top: 0.3rem;">
+              Micro-CT는 앞서 말씀드렸다시피 다양한 분야에서 활용되고 있지만,<br>
+              최근 해당 기술에 대한 관심이 크게 증가되었습니다.<br>
+              특히 그 대표적인 예로, 베수비오 화산 폭발로 인해 약 2,000년 간 묻힌 고대 도시 히르쿨라네움에서<br>
+              발견된 두루마리를 해독하기 위해 진행되고 있는 국제 연구 프로젝트인 '베수비오 챌린지'를 들 수 있습니다.<br>
+              수세기 동안 불에 탄 채로 보존되어 겉보기에는 단순한 숯처럼 보이지만, 사실 그 안에는 아직 펼쳐지지 않은<br>
+              귀중한 고문서 정보가 담겨 있을 가능성이 있습니다. 하지만 내부 내용을 보기 위해 펼치는 순간 문서가 바스라져<br>
+              두루마리가 소실될 가능성이 있기 때문에 펼치지 않고 내부를 봐야할 수밖에 없습니다.<br>
+              이러한 문제를 해결하기 위해 연구자들은 Micro-CT로 두루마리 내부를 3차원으로 비파괴적으로 분석하고<br>
+              인공지능 알고리즘을 이용해 미세한 잉크 흔적을 판독하게 내용 일부를 판독하는데 성공했습니다.<br>
+              이 프로젝트가 언론을 통해 소개되면서, 기존에 의료 분야 위주로 사용되던 Micro-CT가 고대 문헌 해독과<br>
+              문화유산 보존에도 핵심적인 역할을 할 수 있음이 부각되었고, 이에 따른 대중적 관심도 증가하고 있습니다.<br><br>
+              As mentioned earlier, Micro-CT is utilized in various fields,<br> 
+              but recently there has been a significant increase in interest in this technology.<br> 
+              A prominent example is the "Vesuvius Challenge," an international research project aimed at deciphering ancient scrolls<br>
+              discovered in the city of Herculaneum, which had been buried for about 2,000 years following the eruption of Mount Vesuvius.<br>
+              Although preserved in a charred state for centuries, appearing externally as mere charcoal,<br>
+              these scrolls may contain valuable ancient textual information that has yet to be revealed.<br>
+              However, physically unrolling them to view their contents is not an option,<br>
+              as doing so would immediately cause the fragile scrolls to disintegrate, resulting in permanent loss.<br>
+              To overcome this issue, researchers have employed Micro-CT to non-destructively analyze <br>
+              the internal structure of the scrolls in three dimensions,<br>
+              successfully decoding parts of the text by using artificial intelligence algorithms to detect faint traces of ink.<br>
+              As this project gained media attention, Micro-CT—which had primarily been used in medical fields—<br>
+              became recognized as a critical tool for deciphering ancient manuscripts and preserving cultural heritage,<br>
+              leading to growing public interest in this technology.<br>
+              
+            </figcaption>
+          </figure>
+
+
+
+
+          
+          <!-- (1) 동영상 + 설명 -->
+          <figure style="margin: 0; padding: 0;">
+            <video controls style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
+              <source src="C:/Users/Inwon/Desktop/homepage/1 (1).mp4" type="video/mp4">
+              <!-- 대체 안내 문구 -->
+              Your browser does not support this video format.
+            </video>
+            <figcaption style="margin-top: 0.3rem;">
+              여기에는 동영상에 대한 캡션(설명)을 넣을 수 있습니다.
+            </figcaption>
+          </figure>
+
+          <!-- (2) 첫 번째 이미지 + 설명 -->
+          <figure style="margin: 0; padding: 0;">
+            <img src="C:/Users/Inwon/Desktop/homepage/paper2.png" alt="추가 이미지1"
+                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
+            <figcaption style="margin-top: 0.3rem;">
+              이미지 1에 대한 설명을 여기에 작성합니다.
+            </figcaption>
+          </figure>
+
+          <!-- (3) 두 번째 이미지 + 설명 -->
+          <figure style="margin: 0; padding: 0;">
+            <img src="C:/Users/Inwon/Desktop/homepage/paper3.png" alt="추가 이미지2"
+                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
+            <figcaption style="margin-top: 0.3rem;">
+              이미지 2에 대한 설명을 여기에 작성합니다.
+            </figcaption>
+          </figure>
+
+          <!-- 필요 시 추가 미디어(이미지/동영상) 계속 같은 패턴으로 추가 -->
+        </div>
+      </div>
+     
+     
+     
+      <!-- 댓글 섹션 -->
+      <div class="comment-section">
+        <h4>Comment</h4>
+        <ul class="comment-list">
+          <!-- JavaScript로 댓글이 추가될 예정 -->
+        </ul>
+        <form class="comment-form">
+          <input type="text" name="commenterName" placeholder="Name" required>
+          <textarea name="commentText" rows="3" placeholder="..." required></textarea>
+          <button type="submit">Comment input</button>
+        </form>
+      </div>
+    </div>
+  </article>
+
+
+
+  
   
   <!-- 예시 게시물(1) -->
   <article class="review-post">
@@ -735,7 +882,7 @@
               Your browser does not support this video format.
             </video>
             <figcaption style="margin-top: 0.3rem;">
-              
+             [Ref. https://youtu.be/QBc4oF7QU2o?si=YVUXxY0_OM6wqfJn]<br> 
             </figcaption>
           </figure>
             <figcaption style="margin-top: 0.3rem;">
@@ -764,45 +911,9 @@
               As this project gained media attention, Micro-CT—which had primarily been used in medical fields—<br>
               became recognized as a critical tool for deciphering ancient manuscripts and preserving cultural heritage,<br>
               leading to growing public interest in this technology.<br>
-              [Ref. https://youtu.be/QBc4oF7QU2o?si=YVUXxY0_OM6wqfJn]
+              
             </figcaption>
           </figure>
-
-
-
-
-          
-          <!-- (1) 동영상 + 설명 -->
-          <figure style="margin: 0; padding: 0;">
-            <video controls style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
-              <source src="C:/Users/Inwon/Desktop/homepage/1 (1).mp4" type="video/mp4">
-              <!-- 대체 안내 문구 -->
-              Your browser does not support this video format.
-            </video>
-            <figcaption style="margin-top: 0.3rem;">
-              여기에는 동영상에 대한 캡션(설명)을 넣을 수 있습니다.
-            </figcaption>
-          </figure>
-
-          <!-- (2) 첫 번째 이미지 + 설명 -->
-          <figure style="margin: 0; padding: 0;">
-            <img src="C:/Users/Inwon/Desktop/homepage/paper2.png" alt="추가 이미지1"
-                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
-            <figcaption style="margin-top: 0.3rem;">
-              이미지 1에 대한 설명을 여기에 작성합니다.
-            </figcaption>
-          </figure>
-
-          <!-- (3) 두 번째 이미지 + 설명 -->
-          <figure style="margin: 0; padding: 0;">
-            <img src="C:/Users/Inwon/Desktop/homepage/paper3.png" alt="추가 이미지2"
-                 style="width: 100%; height: auto; display: block; border: 1px solid #ccc;">
-            <figcaption style="margin-top: 0.3rem;">
-              이미지 2에 대한 설명을 여기에 작성합니다.
-            </figcaption>
-          </figure>
-
-          <!-- 필요 시 추가 미디어(이미지/동영상) 계속 같은 패턴으로 추가 -->
         </div>
       </div>
      
