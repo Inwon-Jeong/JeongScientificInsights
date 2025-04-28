@@ -62,12 +62,14 @@
     header h1 {
       margin: 0;
       font-size: 1.8rem;
+      text-align: center; /* (추가) 제목 가운데 정렬 */
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 1.5rem;
       margin-top: 0.5rem;
+      justify-content: center; /* (추가) 메뉴 항목 가운데 정렬 */
     }
     nav a {
       color: #fff;
@@ -109,6 +111,11 @@
       display: none; /* 기본적으로 모두 감춤 */
     }
 
+/* (추가) 섹션 제목 가운데 정렬 */
+    .main-section h2 {
+      text-align: center;
+    }
+    
     /* 소개 섹션 안의 프로필 */
     .intro-profile {
       /* (수정) flex 제거 -> 이미지 위, 텍스트 아래로 배치 */
