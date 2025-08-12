@@ -262,7 +262,12 @@
       cursor: zoom-out; /* 마우스 포인터 바꿈 */
     }
 
-
+    /* 모바일에서 한 줄씩 */
+    @media (max-width: 720px){
+      .media-block{ grid-template-columns: 1fr; }
+      .two-up{ grid-template-columns: 1fr; }
+    }
+    
     /* 푸터 */
     footer {
       background: #0f2747;
@@ -1669,5 +1674,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
