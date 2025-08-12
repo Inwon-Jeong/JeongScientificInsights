@@ -89,7 +89,7 @@
 
     /* 메인 컨테이너 */
     main {
-      max-width: 1300px;
+      max-width: 1200px;
       margin: 0 auto;
       min-height: 80vh; /* 푸터를 아래로 밀기 위한 높이 예시 */
       padding: 2rem;
@@ -163,6 +163,19 @@
   font-size: 1.2rem;
 }
 
+.post-content {
+  margin-top: 1rem;
+  display: none; /* 기본적으로 숨김 -> 제목 클릭 시 토글 */
+}
+
+/* ▼ 추가: figure 마진 제거 + 이미지 폭 제한 */
+.main-section figure { margin: 0; }
+.hero-img { display:block; width:100%; max-width:100%; height:auto; }
+/* ▲ 추가 끝 */
+    
+.conference-post .post-header { justify-content: center; }
+.conference-post .post-header h3 { text-align: center; }
+    
 /* 썸네일 높이 통일 */
 .review-post .post-header img {
   width: 100px !important;
@@ -899,14 +912,14 @@
            하나의 프로그램을 사용하기보다는 여러 개의 프로그램을 통해 나온 결과를 함께 비교하는 경우가 많습니다.<br>
            (물론 경우에 따라 한 가지 방법으로 나온 계통도만 보기도 함)<br>
            MrBayes는 <a href="https://nbisweden.github.io/MrBayes/" target="_blank" rel="noopener">https://nbisweden.github.io/MrBayes/</a>에서<br>
-           다운 후 사용 가능하며, 프로그램 설치는 위 이미지에서 표시된 붉은색 숫자 순서대로 클릭하시면 됩니다.<br>
+           다운 후 사용 가능하며, 프로그램 설치는 아래 이미지에서 표시된 붉은색 숫자 순서대로 클릭하시면 됩니다.<br>
            그 후, 설치된 폴더 MrBayes-3.2.7-Win에서 하위폴더 bin을 클릭 후 각 운영체제에 맞는 버전으로 실행하시면 됩니다.<br>
            운영체제 확인은 윈도우 키 + i -> 시스템 -> 정보 -> 시스템 종류 순으로 들어가셔서 확인하시면 됩니다.<br><br>
 
            As noted above, there are many ways to infer a phylogeny, so rather than relying on just one program,<br>
            results from multiple programs are often compared side by side (though in some cases only a single method's tree is used).<br>
            You can download and use MrBayes from the following link: <a href="https://nbisweden.github.io/MrBayes/" target="_blank" rel="noopener">https://nbisweden.github.io/MrBayes/</a><br>
-           To install the program, click through the steps in the order marked by the red numbers in the image above.<br>
+           To install the program, click through the steps in the order marked by the red numbers in the image below.<br>
            After that, open the installed folder MrBayes-3.2.7-Win, go into the bin subfolder, and run the version that matches your operating system.<br>
            To check your operating system type, press Windows key + i -> System -> About -> System type<br>
         </figcaption>
@@ -1779,6 +1792,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
