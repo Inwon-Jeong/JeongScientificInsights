@@ -854,10 +854,9 @@
 
     <div class="post-content">
       <!-- 사진 왼쪽 · 본문 오른쪽 -->
-      <section class="left-right" style="margin-bottom:1rem;">
-        <figure>
-          <img src="Bayes1/1.png" alt="설명 이미지" loading="lazy">
-          <figcaption style="margin-top:.4rem; color:#666; font-size:.9rem;">
+      <section class="left-right" style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; margin-bottom:1rem;">>
+        <figure style="flex:0 0 260px; margin:0;">
+          <img src="Bayes1/1.png" alt="설명 이미지" loading="lazy" style="width:100%; height:auto; display:block;">
           <figcaption style="margin-top:.4rem; color:#666; font-size:.9rem;"></figcaption>
           </figcaption>
         </figure>
@@ -897,11 +896,9 @@
             To make this more intuitive, see the example in the figure below.<br>
             In the figure, draws are performed with replacement-after each draw, the ball is returned to the box.
           </p>
-        </div>
-      </section>
 
       <figure>
-        <img src="Bayes1/2.png" alt="예시 그림" class="hero-img">
+        <img src="Bayes1/2.png" alt="예시 그림" class="hero-img" style="max-width:100%; height:auto; display:block; margin:0 auto;">
         <figcaption style="text-align:center; color:#666; font-size:.9rem;">
           출처: 정인원 학위 디펜스 자료 Source: In-Won Jeong's Thesis Defense Materials
         </figcaption>
@@ -1794,6 +1791,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
