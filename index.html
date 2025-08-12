@@ -89,7 +89,7 @@
 
     /* 메인 컨테이너 */
     main {
-      max-width: 1000px;
+      max-width: 1300px;
       margin: 0 auto;
       min-height: 80vh; /* 푸터를 아래로 밀기 위한 높이 예시 */
       padding: 2rem;
@@ -162,6 +162,15 @@
   margin: 0;
   font-size: 1.2rem;
 }
+
+/* 썸네일 높이 통일 */
+.review-post .post-header img {
+  width: 100px !important;
+  height: 72px !important;   /* ← Micro‑CT 카드와 맞추고 싶으면 여기 숫자 조절 */
+  object-fit: cover;         /* 가로/세로 비율 유지하며 보기 좋게 잘라냄 */
+  flex-shrink: 0;
+}
+    
 .post-content {
   margin-top: 1rem;
   display: none; /* 기본적으로 숨김 -> 제목 클릭 시 토글 */
@@ -853,7 +862,7 @@
             By comparing DNA or protein sequences, we infer 'who is more closely related to whom'.<br>
             However, once the number of sequences grows beyond a few dozen, the number of possible trees explodes into the tens of billions,<br>
             making it impossible to evaluate them all by hand.<br>
-          (Even with just ten species, the number of possible phylogenetic trees exceeds 280 million. <br><br>Source: <a href="https://doi.org/10.2307/2412810" target="_blank" rel="noopener">https://doi.org/10.2307/2412810</a>)
+          (Even with just ten species, the number of possible phylogenetic trees exceeds 280 million.<br>Source: <a href="https://doi.org/10.2307/2412810" target="_blank" rel="noopener">https://doi.org/10.2307/2412810</a>)
           </p>
 
           <h4>다른 계통 분석 프로그램과의 차이점 Differences from other phylogenetic programs</h4>
@@ -885,8 +894,6 @@
 
           <!-- (2) 첫 번째 이미지 + 설명 -->
       <figure style="margin: 0; padding: 0;">
-        <img src="Bayes1/3.png" alt="추가 이미지1"
-              style="width: 100%; height: auto; display: block;">
         <figcaption style="margin-top: 0.3rem;">
            하지만 앞서 말씀드렸듯이, 계통도를 그리는 방법에는 여러 가지가 존재하기 때문에<br>
            하나의 프로그램을 사용하기보다는 여러 개의 프로그램을 통해 나온 결과를 함께 비교하는 경우가 많습니다.<br>
@@ -903,6 +910,7 @@
            After that, open the installed folder MrBayes-3.2.7-Win, go into the bin subfolder, and run the version that matches your operating system.<br>
            To check your operating system type, press Windows key + i -> System -> About -> System type<br>
         </figcaption>
+        <img src="Bayes1/3.png" alt="추가 이미지1" style="width: 100%; height: auto; display: block;">
       </figure>
 
       <!-- 댓글 폼(기존 스크립트 그대로 작동) -->
@@ -1771,6 +1779,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
