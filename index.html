@@ -846,6 +846,140 @@
 <!-- (추가) (4) Review 섹션 -->
 <section id="review" class="main-section">
   <h2>Review</h2>
+
+   <article class="review-post">
+     <div class="post-header">
+       <img src="Bayes1/1.png" alt="" style="width:100px; height:auto;" />
+       <h3 class="post-title">About MrBayes for Phylogenetic analysis [Method]</h3>
+      </div>
+
+     <div class="post-content">
+       <figure>
+         <img src="Bayes1/4.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         해당 게시물에서는 정말 누구나 보고 따라할 수 있도록 실제 작동법에 대해 알려드리겠습니다.
+         먼저, MrBayes르 실행했을 때 처음 시작 화면은 위 이미지와 같습니다
+       <p>      
+       
+       <figure>
+         <img src="Bayes1/5.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         실행을 위해 execute 입력 후 스페이스바를 누릅니다.
+       <p>  
+
+       <figure>
+         <img src="Bayes1/6.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         그 후, sequence가 정렬되어 있는 nexus 파일을 드래그 앤 드롭하면 자동으로 
+         파일 경로가 입력됩니다. 만약, execute를 입력한 후 스페이스바를 누르지 않았다면
+         executeC로 명령어가 인식되어서 작동하지 않고, 파일 경로 이름이 너무 길면
+         인식을 못 해서 경로는 단순하게 하시는게 좋습니다.
+         파일 경로 입력이 완료된 후 Enter를 누르면 실행이 됩니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/7.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         하지만 IQ-Tree에서 잘 돌아가던 nexus 파일이 오류가 날 수도 있습니다.
+         붉은 박스로 표시한 에러를 보면 알 수 있듯이, taxa와 sequence에는 오류가 없지만
+         MrBayes가 읽지 못하는 공백이나 특수문자가 포함되어 있는 것을 알 수 있습니다.
+         이럴 때는 그냥..
+       <p> 
+
+       <figure>
+         <img src="Bayes1/8.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         에러 메시지를 복사해서 오류가 났던 내 nexus 파일과 함께 ChatGPT(제가 쓴 건 ChatGPT o3)한테
+         보내주면 됩니다. 그럼 GPT가 알아서 특수문자 정리 및 줄 정렬을 완료하고 MrBayes에서 돌아갈 수 있는
+         형태로 변환해주게 되고, 붉은 박스로 표시한 부분을 클릭해서 다운받을 수 있습니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/9.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         ChatGPT가 보내준 파일로 다시 돌려보니 아주 잘 돌아가고 있습니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/10.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         선행 연구 및 자신이 선택한 옵션값들을 설정하고, 분석이 끝날 때까지 기다리면 됩니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/11.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         ChatGPT가 예시와 함께 생성한 각 옵션의 의미는 다음과 같습니다.
+         값을 정할 수 있는 기준이 없으면 MrBayes의 기본값을 사용하시면 됩니다.
+         예를 들어, temp 값도 선행연구들에게서 따로 지정하진 않았기 때문에 <a href="manual.pdf" target="_blank" rel="noopener">MrBayes manual</a>에서
+         해당 옵션의 기본값은 0.2라고 했기 때문에 기본값을 사용했습니다.
+       <p> 
+
+       <figure>
+         <video controls style="width:100%; height:auto;">
+           <source src="Bayes1/16.mp4" type="video/mp4">
+         </video>
+         <img src="Bayes1/12.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         맨 뒤에 나타나 있는 00:00:00 형식의 숫자는 시간:분:초 순서로 남은 시간을 의미합니다.
+         그 외의 항목은 위 이미지에서 표시했습니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/13.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         계산이 끝나면 sumt;를 입력하고 Enter를 누르면 작성된 계통도를 내 컴퓨터에 자동으로 다운해줍니다.
+       <p> 
+         
+       <figure>
+         <img src="Bayes1/14.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+
+       <p>
+         이렇게 수많은 설명과 대략적인 계통도도 함께 제공해주는데, 어차피 계통도 편집 프로그램에서 수정할거라
+         신경 안 쓰셔도 됩니다.
+       <p> 
+
+       <figure>
+         <img src="Bayes1/15.png" alt="MrBayes 시작 화면" class="hero-img">
+       </figure>
+       <p>
+         끝!!!!!!!
+       <p> 
+      <!-- 댓글 폼(기존 스크립트 그대로 작동) -->
+      <div class="comment-section">
+        <h4>Comment</h4>
+        <ul class="comment-list"></ul>
+        <form class="comment-form">
+          <input type="text" name="commenterName" placeholder="Name" required>
+          <textarea name="commentText" rows="3" placeholder="..." required></textarea>
+          <button type="submit">Comment input</button>
+        </form>
+      </div>
+    </div>
+  </article>
+         
+         
   <article class="review-post">
     <div class="post-header">
       <img src="Bayes1/1.png" alt="" style="width:100px; height:auto;" />
@@ -1789,6 +1923,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
