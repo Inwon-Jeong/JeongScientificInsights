@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jeong's Scientific Insights</title>
 
+    <!-- ▼ SEO & Verification: 여기에 추가 -->
+  <meta name="description" content="정인원의 연구 포트폴리오 | Stathmopodidae 계통 연구, Micro‑CT, YOLO 기반 종 동정, 발표/논문/갤러리. In‑Won Jeong’s research: phylogenetics, Micro‑CT, YOLO species ID.">
+  <link rel="canonical" href="https://inwon-jeong.github.io/JeongScientificInsights/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
+
+  <!-- (검증 토큰은 각 콘솔에서 발급 후 아래 값 교체) -->
+  <meta name="google-site-verification" content="3lPBcOLeuwhIro8C2hHczZ7Ozj4JcAhc1PwTG_0ib10" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Jeong's Scientific Insights">
+  <meta property="og:title" content="Jeong's Scientific Insights">
+  <meta property="og:description" content="정인원 연구 포트폴리오 | Stathmopodidae, Micro‑CT, YOLO 기반 종 동정.">
+  <meta property="og:url" content="https://inwon-jeong.github.io/JeongScientificInsights/">
+  <meta property="og:image" content="https://inwon-jeong.github.io/JeongScientificInsights/me.jpg">
+  <!-- ★ --><meta property="og:image:alt" content="Portrait of In‑Won Jeong">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jeong's Scientific Insights">
+  <meta name="twitter:description" content="Stathmopodidae phylogenetics, Micro‑CT, YOLO species ID.">
+  <meta name="twitter:image" content="https://inwon-jeong.github.io/JeongScientificInsights/me.jpg">
+  <!-- ▲ 여기까지 -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
@@ -107,9 +133,10 @@
     }
 
     /* 각 섹션을 탭처럼 숨기고 보이기 위해 */
-    .main-section {
-      display: none; /* 기본적으로 모두 감춤 */
-    }
+    .main-section { display: block; }
+    .js .main-section { display: none; }
+    .js #intro.main-section { display: block; }
+
 
 /* (추가) 섹션 제목 가운데 정렬 */
     .main-section h2 {
@@ -379,7 +406,6 @@
         Jeonju, Republic of Korea <br>
         2023. March.~2025. August.<br><br>
       </p>     
-    </div>
   </section>
 
   <!-- (2) publication 섹션 -->
@@ -882,13 +908,13 @@
          그 후, sequence가 정렬되어 있는 nexus 파일을 드래그 앤 드롭하면 자동으로 
          파일 경로가 입력됩니다. <br>만약, execute를 입력한 후 스페이스바를 누르지 않았다면
          executeC로 명령어가 인식되어서 작동하지 않고, 파일 경로 이름이 너무 길면<br>
-         인식을 못 해서 경로는 단순하게 하시는게 좋습니다.<br>
+         인식을 못 해서 경로는 단순하게 하시는게 좋습니다.
          파일 경로 입력이 완료된 후 Enter를 누르면 실행이 됩니다.<br><br>
-         Then, drag and drop the nexus file that contains the aligned sequences,<br>
+         Then, drag and drop the nexus file that contains the aligned sequences,
          and the file path will be entered automatically.<br>
          If you don't press the space bar after typing [execute], the command will be interpreted as [executeC]<br>
          and won't work, and if the file path is too long it may not be recognized,<br>
-         so it's best to keep the path simple.<br>
+         so it's best to keep the path simple.
          Once the file path is entered, press Enter to run it.<br><br>
        <p> 
 
@@ -903,7 +929,7 @@
          이럴 때는 그냥..<br><br>
          However, a nexus file that ran fine in IQ-Tree can still throw an error.<br>
          As you can see from the error highlighted in red, there are no issues with the taxa or sequences,<br>
-         but the file contains whitespace or special characters that MrBayes cannot read.<br>
+         but the file contains whitespace or special characters that MrBayes cannot read.
          In that case, Just..<br><br>
        <p> 
 
@@ -935,7 +961,7 @@
 
        <p>
          선행 연구 및 자신이 선택한 옵션값들을 설정하고, 분석이 끝날 때까지 기다리면 됩니다.<br><br>
-         Set the parameters according to prior studies and your chosen values,<br>
+         Set the parameters according to prior studies and your chosen values,
          then wait for the analysis to complete.<br><br>
        <p> 
 
@@ -1804,16 +1830,15 @@
           </div>
       </div>
     </section>
-  </section>
 
   <!-- (5) Contact 섹션 -->
   <section id="contact" class="main-section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:scott9778@jbnu.ac.kr">scott9778@jbnu.ac.kr</a></p>
-    <p>Youtube ID: UCFfbwColKn0AwFGkYTwt0bg</a></p>
-    <p>Naver Blog: https://blog.naver.com/scott9778</a></p>
-    <p>Researchgate: https://www.researchgate.net/profile/In-Won-Jeong?ev=hdr_xprf/</a></p>
-    <p>ORCID: https://orcid.org/0009-0001-6581-6102/</a></p>
+    <p>Youtube ID: <a href="https://www.youtube.com/channel/UCFfbwColKn0AwFGkYTwt0bg">UCFfbwColKn0AwFGkYTwt0bg</a></p>
+    <p>Naver Blog: <a href="https://blog.naver.com/scott9778">blog.naver.com/scott9778</a></p>
+    <p>Researchgate: <a href="https://www.researchgate.net/profile/In-Won-Jeong?ev=hdr_xprf/">researchgate.net/profile/In-Won-Jeong</a></p>
+    <p>ORCID: <a href="https://orcid.org/0009-0001-6581-6102/">0009-0001-6581-6102</a></p>
     <!-- 추가 연락처나 정보... -->
   </section>
 </main>
@@ -1826,6 +1851,7 @@
 <!-- 스크립트: 메인 메뉴 클릭 시 해당 섹션만 표시 -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+  document.documentElement.classList.add('js');  /* ← 이 줄 추가 */
   const menuLinks = document.querySelectorAll('.menu-link');
   const mainSections = document.querySelectorAll('.main-section');
 
@@ -1952,6 +1978,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
 
 
