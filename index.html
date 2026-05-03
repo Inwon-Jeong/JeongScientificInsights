@@ -297,6 +297,77 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Collecting 안의 하위 폴더 카드 */
+    .folder-box {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .folder-box:focus {
+      outline: 3px solid #0f2747;
+      outline-offset: 3px;
+    }
+
+    .folder-icon {
+      width: 100%;
+      height: 170px;
+      background: #f4c4a8;
+      border: 2px solid #333;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #111;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .folder-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .folder-icon::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 10px;
+      width: 85px;
+      height: 20px;
+      background: #f4c4a8;
+      border: 2px solid #333;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .collecting-folder-view {
+      display: none;
+      width: 100%;
+    }
+
+    .folder-back {
+      margin: 0 0 1rem 0;
+      padding: 0.5rem 0.8rem;
+      border: none;
+      border-radius: 4px;
+      background: #0f2747;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .folder-back:hover {
+      background: #1a406e;
+    }
+
+    
     .img-box img.enlarged {
       position: fixed;
       top: 50%;
@@ -1522,7 +1593,13 @@
     <!-- B -->
     <section id="project-b" class="project-section">
       <h3>Collecting</h3>
-      <div class="img-container">
+      <div class="collecting-root img-container">
+        <div class="img-box folder-box" tabindex="0" data-target="collecting-folder-2026-madagascar">
+          <div class="folder-icon">
+            <img src="Collecting/2026 Madagascar/1.png" alt="2026 Madagascar folder image">
+          <p><strong>2026 Madagascar</strong><br>Double-click to open</p>
+        </div>
+        
         <div class="img-box">
           <img src="Collecting/8.jpg" alt="B1">
           <p>Ephid of apple 2024.06.04</p>
@@ -1816,6 +1893,258 @@
           <p>[Republic of Korea 2017.10.14.]</p>
         </div>
       </div>
+
+      <div id="collecting-folder-2026-madagascar" class="collecting-folder-view">
+        <button type="button" class="folder-back">← Back to Collecting</button>
+        <h4>2026 Madagascar</h4>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/1.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/2.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/3.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/4.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/5.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/6.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/7.jpg" alt="2026 Madagascar image 1">
+            <p>with Andrianjaka and Rangers</p>
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/8.jpg" alt="2026 Madagascar image 1">
+            <p>with Ando</p>
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/9.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/10.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/11.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/12.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/13.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/14.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/15.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/16.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/17.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/18.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/19.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/20.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/21.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/22.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/23.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/24.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/25.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/26.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/27.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/28.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/29.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/30.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/31.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/32.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/33.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/34.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/35.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/36.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/37.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/38.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/39.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/40.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/41.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/42.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/43.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/44.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/45.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/46.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/47.jpg" alt="2026 Madagascar image 1">
+          </div>
+
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/48.jpg" alt="2026 Madagascar image 1">
+          </div>
+          
+        <div class="img-container">
+          <div class="img-box">
+            <img src="Collecting/2026 Madagascar/1.mp4" alt="2026 Madagascar image 1">
+          </div>
+          
     </section>
     <!-- C -->
     <section id="project-c" class="project-section">
@@ -2081,6 +2410,58 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   </script>
 
+<!-- Collecting 하위 폴더 더블 클릭 열기/뒤로가기 스크립트 -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const collectingRoot = document.querySelector('#project-b .collecting-root');
+    const folderCards = document.querySelectorAll('#project-b .folder-box');
+    const folderViews = document.querySelectorAll('#project-b .collecting-folder-view');
+    const backButtons = document.querySelectorAll('#project-b .folder-back');
+    const collectingTab = document.querySelector('.sub-nav a[href="#project-b"]');
+
+    function showCollectingRoot() {
+      if (collectingRoot) collectingRoot.style.display = 'flex';
+
+      folderViews.forEach(view => {
+        view.style.display = 'none';
+      });
+    }
+
+    function openCollectingFolder(targetId) {
+      const target = document.getElementById(targetId);
+      if (!target || !collectingRoot) return;
+
+      collectingRoot.style.display = 'none';
+
+      folderViews.forEach(view => {
+        view.style.display = 'none';
+      });
+
+      target.style.display = 'block';
+    }
+
+    folderCards.forEach(card => {
+      card.addEventListener('dblclick', () => {
+        openCollectingFolder(card.dataset.target);
+      });
+
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          openCollectingFolder(card.dataset.target);
+        }
+      });
+    });
+
+    backButtons.forEach(button => {
+      button.addEventListener('click', showCollectingRoot);
+    });
+
+    if (collectingTab) {
+      collectingTab.addEventListener('click', showCollectingRoot);
+    }
+  });
+</script>
+          
 <!-- (추가) 아래와 같이 Gallery 탭 이미지 클릭 확대/축소 스크립트를 추가 -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
